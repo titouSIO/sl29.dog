@@ -140,7 +140,7 @@ class Dog:
             puppies._father = father.name
             puppies._mother = mother.name
 
-            father._puppies.append(puppies)
-            mother._puppies.append(puppies)
+            father._puppies.append(puppies.name)
+            mother._puppies.append(puppies.name)
 
         return puppies
