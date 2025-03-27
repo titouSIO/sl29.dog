@@ -46,11 +46,19 @@ class Dog:
         """
         DOCSTRINGS A COMPLETER
         """
-        return self._sex
-        raise NotImplementedError
+        return self._sex 
 
     def __str__(self) -> str:
         """
         DOCSTRINGS A COMPLETER
         """
         return f"Chien: {self.name}, Race: {self._race}, Sexe: {self._sex}"
+    
+
+    
+    def bark(self, n=1):
+        return "Woff" * n
+
+    def chew(self, stuff):
+        a_stuff = stuff[:-1]
+        return a_stuff
