@@ -62,6 +62,14 @@ class Dog:
     
     
     def bark(self, n=1):
+        """Aboie
+
+        Args:
+            n (int, optional): Le nombre d'aboiements. Defaults to 1.
+
+        Returns:
+            str: L'aboiement
+        """
         return "Woff" * n
 
     def chew(self, stuff):
@@ -135,12 +143,12 @@ class Dog:
 
             puppies_sex = random.choice(["M", "F"])
 
-            puppies = Dog( race=race,sex=puppies_sex, name="chiotA")
+            puppy = Dog( race=race,sex=puppies_sex, name="")
 
-            puppies._father = father.name
-            puppies._mother = mother.name
+            puppy._father = father
+            puppy._mother = mother
 
-            father._puppies.append(puppies.name)
-            mother._puppies.append(puppies.name)
+            father._puppies.append(puppy)
+            mother._puppies.append(puppy)
 
-        return puppies
+        return puppy
